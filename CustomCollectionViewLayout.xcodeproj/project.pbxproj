@@ -3,27 +3,65 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7F5231A62722AD4E007C5C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5231A52722AD4E007C5C78 /* AppDelegate.swift */; };
 		7F5231A82722AD4E007C5C78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5231A72722AD4E007C5C78 /* SceneDelegate.swift */; };
-		7F5231AA2722AD4E007C5C78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5231A92722AD4E007C5C78 /* ViewController.swift */; };
+		7F5231AA2722AD4E007C5C78 /* TvGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5231A92722AD4E007C5C78 /* TvGuideViewController.swift */; };
 		7F5231AD2722AD4E007C5C78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5231AB2722AD4E007C5C78 /* Main.storyboard */; };
 		7F5231AF2722AD50007C5C78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5231AE2722AD50007C5C78 /* Assets.xcassets */; };
 		7F5231B22722AD50007C5C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5231B02722AD50007C5C78 /* LaunchScreen.storyboard */; };
+		7F5231BA2722AD94007C5C78 /* TvGuideFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5231B92722AD94007C5C78 /* TvGuideFlowLayout.swift */; };
+		7F5231BE2722C238007C5C78 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5231BC2722C238007C5C78 /* ImageCollectionViewCell.swift */; };
+		7F5231BF2722C238007C5C78 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5231BD2722C238007C5C78 /* ImageCollectionViewCell.xib */; };
+		7F5231C12722C75E007C5C78 /* InstagramLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5231C02722C75E007C5C78 /* InstagramLayout.swift */; };
+		7F5231C32722C9EC007C5C78 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5231C22722C9EC007C5C78 /* InstagramViewController.swift */; };
+		7F5231C52722CE17007C5C78 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5231C42722CE17007C5C78 /* HomeViewController.swift */; };
+		7F5231C92722EC07007C5C78 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5231C82722EC07007C5C78 /* TinderViewController.swift */; };
+		7F5231D127230915007C5C78 /* TinderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5231D027230915007C5C78 /* TinderCardView.swift */; };
+		7F5231D327231D54007C5C78 /* TinderContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5231D227231D54007C5C78 /* TinderContainerView.swift */; };
+		7FD577252724137400B0DB66 /* PinterestFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD577242724137400B0DB66 /* PinterestFlowLayout.swift */; };
+		7FD577272724139100B0DB66 /* PinterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD577262724139100B0DB66 /* PinterestViewController.swift */; };
+		7FD5772A27241A4200B0DB66 /* NetworkAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5772927241A4100B0DB66 /* NetworkAdaptor.swift */; };
+		7FD5772C27241A4700B0DB66 /* NetworkAdaptorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5772B27241A4700B0DB66 /* NetworkAdaptorHelper.swift */; };
+		7FD5772F27241AAB00B0DB66 /* PinterestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5772E27241AAB00B0DB66 /* PinterestModel.swift */; };
+		7FD5773127243F6700B0DB66 /* PinterestSharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5773027243F6700B0DB66 /* PinterestSharedData.swift */; };
+		7FD577352724550D00B0DB66 /* TvGuideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD577332724550D00B0DB66 /* TvGuideCollectionViewCell.swift */; };
+		7FD577362724550D00B0DB66 /* TvGuideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD577342724550D00B0DB66 /* TvGuideCollectionViewCell.xib */; };
+		9635FD79CBD56CA71C2F03D9 /* Pods_CustomCollectionViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFFA52FF48C538DECCC9527 /* Pods_CustomCollectionViewLayout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0568CCDC230A529E39D04D1A /* Pods-CustomCollectionViewLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomCollectionViewLayout.debug.xcconfig"; path = "Target Support Files/Pods-CustomCollectionViewLayout/Pods-CustomCollectionViewLayout.debug.xcconfig"; sourceTree = "<group>"; };
+		2CFFA52FF48C538DECCC9527 /* Pods_CustomCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5231A22722AD4E007C5C78 /* CustomCollectionViewLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCollectionViewLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5231A52722AD4E007C5C78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F5231A72722AD4E007C5C78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F5231A92722AD4E007C5C78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F5231A92722AD4E007C5C78 /* TvGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideViewController.swift; sourceTree = "<group>"; };
 		7F5231AC2722AD4E007C5C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F5231AE2722AD50007C5C78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F5231B12722AD50007C5C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F5231B32722AD50007C5C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F5231B92722AD94007C5C78 /* TvGuideFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideFlowLayout.swift; sourceTree = "<group>"; };
+		7F5231BC2722C238007C5C78 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F5231BD2722C238007C5C78 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		7F5231C02722C75E007C5C78 /* InstagramLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramLayout.swift; sourceTree = "<group>"; };
+		7F5231C22722C9EC007C5C78 /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
+		7F5231C42722CE17007C5C78 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7F5231C82722EC07007C5C78 /* TinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
+		7F5231D027230915007C5C78 /* TinderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderCardView.swift; sourceTree = "<group>"; };
+		7F5231D227231D54007C5C78 /* TinderContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderContainerView.swift; sourceTree = "<group>"; };
+		7FD577242724137400B0DB66 /* PinterestFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestFlowLayout.swift; sourceTree = "<group>"; };
+		7FD577262724139100B0DB66 /* PinterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestViewController.swift; sourceTree = "<group>"; };
+		7FD5772927241A4100B0DB66 /* NetworkAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAdaptor.swift; sourceTree = "<group>"; };
+		7FD5772B27241A4700B0DB66 /* NetworkAdaptorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAdaptorHelper.swift; sourceTree = "<group>"; };
+		7FD5772E27241AAB00B0DB66 /* PinterestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestModel.swift; sourceTree = "<group>"; };
+		7FD5773027243F6700B0DB66 /* PinterestSharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestSharedData.swift; sourceTree = "<group>"; };
+		7FD577332724550D00B0DB66 /* TvGuideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideCollectionViewCell.swift; sourceTree = "<group>"; };
+		7FD577342724550D00B0DB66 /* TvGuideCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TvGuideCollectionViewCell.xib; sourceTree = "<group>"; };
+		DC2D24DFED2738967EBE8598 /* Pods-CustomCollectionViewLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomCollectionViewLayout.release.xcconfig"; path = "Target Support Files/Pods-CustomCollectionViewLayout/Pods-CustomCollectionViewLayout.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9635FD79CBD56CA71C2F03D9 /* Pods_CustomCollectionViewLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +81,8 @@
 			children = (
 				7F5231A42722AD4E007C5C78 /* CustomCollectionViewLayout */,
 				7F5231A32722AD4E007C5C78 /* Products */,
+				FCF71A7A35E7810DFE83F841 /* Pods */,
+				9F424EB719FD4D4B75CBE4DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +99,95 @@
 			children = (
 				7F5231A52722AD4E007C5C78 /* AppDelegate.swift */,
 				7F5231A72722AD4E007C5C78 /* SceneDelegate.swift */,
-				7F5231A92722AD4E007C5C78 /* ViewController.swift */,
+				7F5231C42722CE17007C5C78 /* HomeViewController.swift */,
+				7F5231A92722AD4E007C5C78 /* TvGuideViewController.swift */,
+				7F5231C22722C9EC007C5C78 /* InstagramViewController.swift */,
+				7F5231C82722EC07007C5C78 /* TinderViewController.swift */,
+				7FD577262724139100B0DB66 /* PinterestViewController.swift */,
+				7FD5773027243F6700B0DB66 /* PinterestSharedData.swift */,
+				7F5231B92722AD94007C5C78 /* TvGuideFlowLayout.swift */,
+				7F5231C02722C75E007C5C78 /* InstagramLayout.swift */,
+				7FD577242724137400B0DB66 /* PinterestFlowLayout.swift */,
+				7FD5772D27241A9700B0DB66 /* Models */,
+				7FD5772827241A3300B0DB66 /* NetworkAdaptor */,
+				7F5231BB2722C1BA007C5C78 /* cells */,
 				7F5231AB2722AD4E007C5C78 /* Main.storyboard */,
 				7F5231AE2722AD50007C5C78 /* Assets.xcassets */,
 				7F5231B02722AD50007C5C78 /* LaunchScreen.storyboard */,
 				7F5231B32722AD50007C5C78 /* Info.plist */,
 			);
 			path = CustomCollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		7F5231BB2722C1BA007C5C78 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				7FD57732272454F600B0DB66 /* TvGuide */,
+				7F5231CB2722EDCD007C5C78 /* Tinder */,
+				7F5231CA2722EDC5007C5C78 /* Image */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		7F5231CA2722EDC5007C5C78 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				7F5231BC2722C238007C5C78 /* ImageCollectionViewCell.swift */,
+				7F5231BD2722C238007C5C78 /* ImageCollectionViewCell.xib */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		7F5231CB2722EDCD007C5C78 /* Tinder */ = {
+			isa = PBXGroup;
+			children = (
+				7F5231D227231D54007C5C78 /* TinderContainerView.swift */,
+				7F5231D027230915007C5C78 /* TinderCardView.swift */,
+			);
+			path = Tinder;
+			sourceTree = "<group>";
+		};
+		7FD5772827241A3300B0DB66 /* NetworkAdaptor */ = {
+			isa = PBXGroup;
+			children = (
+				7FD5772927241A4100B0DB66 /* NetworkAdaptor.swift */,
+				7FD5772B27241A4700B0DB66 /* NetworkAdaptorHelper.swift */,
+			);
+			path = NetworkAdaptor;
+			sourceTree = "<group>";
+		};
+		7FD5772D27241A9700B0DB66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7FD5772E27241AAB00B0DB66 /* PinterestModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7FD57732272454F600B0DB66 /* TvGuide */ = {
+			isa = PBXGroup;
+			children = (
+				7FD577332724550D00B0DB66 /* TvGuideCollectionViewCell.swift */,
+				7FD577342724550D00B0DB66 /* TvGuideCollectionViewCell.xib */,
+			);
+			path = TvGuide;
+			sourceTree = "<group>";
+		};
+		9F424EB719FD4D4B75CBE4DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CFFA52FF48C538DECCC9527 /* Pods_CustomCollectionViewLayout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCF71A7A35E7810DFE83F841 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0568CCDC230A529E39D04D1A /* Pods-CustomCollectionViewLayout.debug.xcconfig */,
+				DC2D24DFED2738967EBE8598 /* Pods-CustomCollectionViewLayout.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F5231B62722AD50007C5C78 /* Build configuration list for PBXNativeTarget "CustomCollectionViewLayout" */;
 			buildPhases = (
+				EBAB9C2195212B68010B8EC2 /* [CP] Check Pods Manifest.lock */,
 				7F52319E2722AD4E007C5C78 /* Sources */,
 				7F52319F2722AD4E007C5C78 /* Frameworks */,
 				7F5231A02722AD4E007C5C78 /* Resources */,
+				DF2DFBD31703302D4093D7EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,20 +251,79 @@
 			files = (
 				7F5231B22722AD50007C5C78 /* LaunchScreen.storyboard in Resources */,
 				7F5231AF2722AD50007C5C78 /* Assets.xcassets in Resources */,
+				7F5231BF2722C238007C5C78 /* ImageCollectionViewCell.xib in Resources */,
+				7FD577362724550D00B0DB66 /* TvGuideCollectionViewCell.xib in Resources */,
 				7F5231AD2722AD4E007C5C78 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DF2DFBD31703302D4093D7EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomCollectionViewLayout/Pods-CustomCollectionViewLayout-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomCollectionViewLayout/Pods-CustomCollectionViewLayout-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomCollectionViewLayout/Pods-CustomCollectionViewLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBAB9C2195212B68010B8EC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomCollectionViewLayout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7F52319E2722AD4E007C5C78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F5231AA2722AD4E007C5C78 /* ViewController.swift in Sources */,
+				7F5231AA2722AD4E007C5C78 /* TvGuideViewController.swift in Sources */,
+				7FD577272724139100B0DB66 /* PinterestViewController.swift in Sources */,
+				7F5231BE2722C238007C5C78 /* ImageCollectionViewCell.swift in Sources */,
+				7FD5772A27241A4200B0DB66 /* NetworkAdaptor.swift in Sources */,
+				7FD5773127243F6700B0DB66 /* PinterestSharedData.swift in Sources */,
+				7FD577252724137400B0DB66 /* PinterestFlowLayout.swift in Sources */,
+				7F5231D127230915007C5C78 /* TinderCardView.swift in Sources */,
+				7F5231C92722EC07007C5C78 /* TinderViewController.swift in Sources */,
+				7F5231BA2722AD94007C5C78 /* TvGuideFlowLayout.swift in Sources */,
+				7F5231C52722CE17007C5C78 /* HomeViewController.swift in Sources */,
+				7F5231C32722C9EC007C5C78 /* InstagramViewController.swift in Sources */,
+				7FD5772C27241A4700B0DB66 /* NetworkAdaptorHelper.swift in Sources */,
+				7F5231C12722C75E007C5C78 /* InstagramLayout.swift in Sources */,
 				7F5231A62722AD4E007C5C78 /* AppDelegate.swift in Sources */,
 				7F5231A82722AD4E007C5C78 /* SceneDelegate.swift in Sources */,
+				7FD5772F27241AAB00B0DB66 /* PinterestModel.swift in Sources */,
+				7F5231D327231D54007C5C78 /* TinderContainerView.swift in Sources */,
+				7FD577352724550D00B0DB66 /* TvGuideCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +467,7 @@
 		};
 		7F5231B72722AD50007C5C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0568CCDC230A529E39D04D1A /* Pods-CustomCollectionViewLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +486,7 @@
 		};
 		7F5231B82722AD50007C5C78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC2D24DFED2738967EBE8598 /* Pods-CustomCollectionViewLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

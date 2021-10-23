@@ -1,24 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jHC-cf-xxK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
+        <scene sceneID="IsQ-sW-fmX">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LYg-uV-NyE" customClass="HomeViewController" customModule="CustomCollectionViewLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zib-a1-pbJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Dzs-gh-Foa">
+                                <rect key="frame" x="132" y="283" width="150" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkK-vE-Vrv">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                        <state key="normal" title="Tv Guide Layout"/>
+                                        <connections>
+                                            <action selector="tvGuideTapped" destination="LYg-uV-NyE" eventType="touchUpInside" id="HMj-Gt-lr8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D39-Op-0is">
+                                        <rect key="frame" x="0.0" y="70" width="150" height="30"/>
+                                        <state key="normal" title="Instagram Layout"/>
+                                        <connections>
+                                            <action selector="instagramTapped" destination="LYg-uV-NyE" eventType="touchUpInside" id="RtZ-aO-Rpa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mz-Br-qZd">
+                                        <rect key="frame" x="0.0" y="140" width="150" height="30"/>
+                                        <state key="normal" title="Tinder Layout"/>
+                                        <connections>
+                                            <action selector="tinderTapped" destination="LYg-uV-NyE" eventType="touchUpInside" id="wVn-2b-qf1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gZ-PB-Lhh">
+                                        <rect key="frame" x="0.0" y="210" width="150" height="30"/>
+                                        <state key="normal" title="Pinterest"/>
+                                        <connections>
+                                            <action selector="pinterestTapped" destination="LYg-uV-NyE" eventType="touchUpInside" id="zbq-0P-jkJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="3TD-eG-9R3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Kt-qx-N0U"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dzs-gh-Foa" firstAttribute="centerX" secondItem="zib-a1-pbJ" secondAttribute="centerX" id="0ic-eK-Zqc"/>
+                            <constraint firstItem="Dzs-gh-Foa" firstAttribute="centerY" secondItem="zib-a1-pbJ" secondAttribute="centerY" multiplier="0.9" id="nnz-zc-e41"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eG6-1d-6RO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aU6-7y-txZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="184.05797101449278" y="73.660714285714278"/>
+        </scene>
+        <!--Tv Guide View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TvGuideViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="TvGuideViewController" customModule="CustomCollectionViewLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="G5J-EZ-Lf4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewLayout key="collectionViewLayout" id="zm1-0N-lja" customClass="TvGuideFlowLayout" customModule="CustomCollectionViewLayout" customModuleProvider="target"/>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G5J-EZ-Lf4" secondAttribute="trailing" id="2Fw-cx-f7V"/>
+                            <constraint firstItem="G5J-EZ-Lf4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Hcz-KA-Oy4"/>
+                            <constraint firstItem="G5J-EZ-Lf4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d29-q5-ejf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G5J-EZ-Lf4" secondAttribute="bottom" id="k1U-6Z-QDg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="G5J-EZ-Lf4" id="bmH-ha-pkN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="984.05797101449286" y="73.660714285714278"/>
+        </scene>
+        <!--Instagram View Controller-->
+        <scene sceneID="e0y-b7-uTo">
+            <objects>
+                <viewController storyboardIdentifier="InstagramViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eTb-OI-bzw" customClass="InstagramViewController" customModule="CustomCollectionViewLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IVf-Zy-WU8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1gS-Ns-bpy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewLayout key="collectionViewLayout" id="Agd-7V-Fu5" customClass="InstagramLayout" customModule="CustomCollectionViewLayout" customModuleProvider="target"/>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UJT-7I-lAq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1gS-Ns-bpy" firstAttribute="leading" secondItem="UJT-7I-lAq" secondAttribute="leading" id="WQV-Vb-o4a"/>
+                            <constraint firstItem="UJT-7I-lAq" firstAttribute="trailing" secondItem="1gS-Ns-bpy" secondAttribute="trailing" id="p39-YH-2SP"/>
+                            <constraint firstItem="UJT-7I-lAq" firstAttribute="bottom" secondItem="1gS-Ns-bpy" secondAttribute="bottom" id="xVJ-3o-G3X"/>
+                            <constraint firstItem="1gS-Ns-bpy" firstAttribute="top" secondItem="UJT-7I-lAq" secondAttribute="top" id="zu3-2x-g75"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="1gS-Ns-bpy" id="yw1-SO-TkJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfY-P1-aGr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726.0869565217392" y="73.660714285714278"/>
+        </scene>
+        <!--Tinder View Controller-->
+        <scene sceneID="0CY-RJ-o12">
+            <objects>
+                <viewController storyboardIdentifier="TinderViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hlS-oE-tAz" customClass="TinderViewController" customModule="CustomCollectionViewLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IHf-iq-Xxb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="a9a-cl-8bD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4sL-Wh-VB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2428" y="74"/>
+        </scene>
+        <!--Pinterest View Controller-->
+        <scene sceneID="fNe-aV-tOc">
+            <objects>
+                <viewController storyboardIdentifier="PinterestViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uj1-4u-nU3" customClass="PinterestViewController" customModule="CustomCollectionViewLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JQ6-dE-nSy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="brw-zG-Bec">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewLayout key="collectionViewLayout" id="Pq3-IK-VPD" customClass="PinterestFlowLayout" customModule="CustomCollectionViewLayout" customModuleProvider="target"/>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tae-0P-tTh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tae-0P-tTh" firstAttribute="trailing" secondItem="brw-zG-Bec" secondAttribute="trailing" id="GTA-eQ-TI2"/>
+                            <constraint firstItem="Tae-0P-tTh" firstAttribute="bottom" secondItem="brw-zG-Bec" secondAttribute="bottom" id="IKo-lR-99A"/>
+                            <constraint firstItem="brw-zG-Bec" firstAttribute="top" secondItem="Tae-0P-tTh" secondAttribute="top" id="ll8-zn-0CQ"/>
+                            <constraint firstItem="brw-zG-Bec" firstAttribute="leading" secondItem="Tae-0P-tTh" secondAttribute="leading" id="x63-bh-9jQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="brw-zG-Bec" id="QIQ-wy-UNa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WKK-rk-Eay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3142" y="74"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TMF-dx-fDN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jHC-cf-xxK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Bu-X8-hRT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LYg-uV-NyE" kind="relationship" relationship="rootViewController" id="9C1-6X-ExY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oiJ-GR-Yqp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580" y="74"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
