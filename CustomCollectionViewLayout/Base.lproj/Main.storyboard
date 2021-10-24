@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Dzs-gh-Foa">
-                                <rect key="frame" x="132" y="283" width="150" height="240"/>
+                                <rect key="frame" x="132" y="248" width="150" height="310"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkK-vE-Vrv">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
@@ -45,6 +45,13 @@
                                         <state key="normal" title="Pinterest"/>
                                         <connections>
                                             <action selector="pinterestTapped" destination="LYg-uV-NyE" eventType="touchUpInside" id="zbq-0P-jkJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDb-L1-j9t">
+                                        <rect key="frame" x="0.0" y="280" width="150" height="30"/>
+                                        <state key="normal" title="Magical Grid"/>
+                                        <connections>
+                                            <action selector="magicalGridTapped" destination="LYg-uV-NyE" eventType="touchUpInside" id="Lgu-xM-ccj"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -176,6 +183,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WKK-rk-Eay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3142" y="74"/>
+        </scene>
+        <!--Magical Grid View Controller-->
+        <scene sceneID="1N9-lu-KFF">
+            <objects>
+                <viewController storyboardIdentifier="MagicalGridViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qFP-jc-5Aa" customClass="MagicalGridViewController" customModule="CustomCollectionViewLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pdq-pA-BYR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkF-46-eEP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <viewLayoutGuide key="safeArea" id="D6t-5f-jpA"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G5U-sr-6Vn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G5U-sr-6Vn" firstAttribute="bottom" secondItem="nkF-46-eEP" secondAttribute="bottom" constant="20" id="LdV-pR-JdD"/>
+                            <constraint firstItem="G5U-sr-6Vn" firstAttribute="trailing" secondItem="nkF-46-eEP" secondAttribute="trailing" id="W6n-am-x6b"/>
+                            <constraint firstItem="nkF-46-eEP" firstAttribute="top" secondItem="G5U-sr-6Vn" secondAttribute="top" id="iRz-fC-3Va"/>
+                            <constraint firstItem="nkF-46-eEP" firstAttribute="leading" secondItem="G5U-sr-6Vn" secondAttribute="leading" id="iVi-AG-ltL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="topView" destination="nkF-46-eEP" id="kOx-HO-c8q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uix-R5-dIg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3845" y="74"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TMF-dx-fDN">

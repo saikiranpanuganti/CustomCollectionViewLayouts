@@ -34,4 +34,9 @@ class HomeViewController: UIViewController {
         let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PinterestViewController")
         navigationController?.pushViewController(controller, animated: true)
     }
+    
+    @IBAction func magicalGridTapped() {
+        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MagicalGridViewController")
+        navigationController?.pushViewController(controller, animated: true)
+    }
 }

@@ -30,6 +30,7 @@
 		7FD5773127243F6700B0DB66 /* PinterestSharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5773027243F6700B0DB66 /* PinterestSharedData.swift */; };
 		7FD577352724550D00B0DB66 /* TvGuideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD577332724550D00B0DB66 /* TvGuideCollectionViewCell.swift */; };
 		7FD577362724550D00B0DB66 /* TvGuideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD577342724550D00B0DB66 /* TvGuideCollectionViewCell.xib */; };
+		7FD5773827245B5000B0DB66 /* MagicalGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5773727245B5000B0DB66 /* MagicalGridViewController.swift */; };
 		9635FD79CBD56CA71C2F03D9 /* Pods_CustomCollectionViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFFA52FF48C538DECCC9527 /* Pods_CustomCollectionViewLayout.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		7FD5773027243F6700B0DB66 /* PinterestSharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestSharedData.swift; sourceTree = "<group>"; };
 		7FD577332724550D00B0DB66 /* TvGuideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideCollectionViewCell.swift; sourceTree = "<group>"; };
 		7FD577342724550D00B0DB66 /* TvGuideCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TvGuideCollectionViewCell.xib; sourceTree = "<group>"; };
+		7FD5773727245B5000B0DB66 /* MagicalGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicalGridViewController.swift; sourceTree = "<group>"; };
 		DC2D24DFED2738967EBE8598 /* Pods-CustomCollectionViewLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomCollectionViewLayout.release.xcconfig"; path = "Target Support Files/Pods-CustomCollectionViewLayout/Pods-CustomCollectionViewLayout.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 				7F5231C22722C9EC007C5C78 /* InstagramViewController.swift */,
 				7F5231C82722EC07007C5C78 /* TinderViewController.swift */,
 				7FD577262724139100B0DB66 /* PinterestViewController.swift */,
+				7FD5773727245B5000B0DB66 /* MagicalGridViewController.swift */,
 				7FD5773027243F6700B0DB66 /* PinterestSharedData.swift */,
 				7F5231B92722AD94007C5C78 /* TvGuideFlowLayout.swift */,
 				7F5231C02722C75E007C5C78 /* InstagramLayout.swift */,
@@ -315,6 +318,7 @@
 				7F5231D127230915007C5C78 /* TinderCardView.swift in Sources */,
 				7F5231C92722EC07007C5C78 /* TinderViewController.swift in Sources */,
 				7F5231BA2722AD94007C5C78 /* TvGuideFlowLayout.swift in Sources */,
+				7FD5773827245B5000B0DB66 /* MagicalGridViewController.swift in Sources */,
 				7F5231C52722CE17007C5C78 /* HomeViewController.swift in Sources */,
 				7F5231C32722C9EC007C5C78 /* InstagramViewController.swift in Sources */,
 				7FD5772C27241A4700B0DB66 /* NetworkAdaptorHelper.swift in Sources */,
@@ -472,6 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L2Z5JFXQ85;
 				INFOPLIST_FILE = CustomCollectionViewLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,6 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L2Z5JFXQ85;
 				INFOPLIST_FILE = CustomCollectionViewLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
